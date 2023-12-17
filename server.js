@@ -12,6 +12,11 @@ app.get('/api/get/user/details', (req,res) => {
 
 })
 
+app.get('/api/get/user', (req,res) => {
+    res.send({name: 'Dev test',email: 'dev@gmail.com'})
+
+})
+
 app.listen(7000, () => {
     console.log('Listening on PORT 7000');
 })
